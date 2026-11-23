@@ -1,0 +1,3 @@
+# Breast Cancer Mass Classification (APS360)
+
+This project builds a deep learning model that classifies breast masses in mammograms as benign or malignant, using the CBIS-DDSM dataset. Each mass is given to the model as two images: a tight crop of the mass and a wider context window that includes the surrounding tissue. The main model is a two-stream CNN that passes each image through its own ImageNet-pretrained ResNet-18 and combines the features to make the prediction. It is compared against a simple fully connected neural network (MLP) baseline, with AUROC as the main metric and recall as the secondary one. The repository contains three notebooks, one each for data cleaning, the baseline model and the two-stream model. The dataset itself is not included.
